@@ -6,10 +6,11 @@ import "./App.css";
 // import UseMemoHook from './examples/UseMemoHook';
 // import UseCallBackHook from './examples/UseCallBackHook';
 // import UseContextHook from './examples/UseContextHook';
-import UseRefHook from "./examples/UseRefHook";
+// import UseRefHook from "./examples/UseRefHook";
+import UseReducerHook from "./examples/UseReducerHook";
 
 const App = () => {
-  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +21,8 @@ const App = () => {
         {/* <UseMemoHook/> */}
         {/* <UseCallBackHook/> */}
         {/* <UseContextHook/> */}
-        <UseRefHook />
+        {/* <UseRefHook /> */}
+        <UseReducerHook/>
       </header>
     </div>
   );
