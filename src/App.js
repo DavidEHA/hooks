@@ -7,7 +7,9 @@ import "./App.css";
 // import UseCallBackHook from './examples/UseCallBackHook';
 // import UseContextHook from './examples/UseContextHook';
 // import UseRefHook from "./examples/UseRefHook";
-import UseReducerHook from "./examples/UseReducerHook";
+// import UseReducerHook from "./examples/UseReducerHook";
+// import UseIdHook from "./examples/UseIdHook";
+import UseTransitionHook from "./examples/UseTransitionHook";
 
 const App = () => {
 
@@ -22,7 +24,9 @@ const App = () => {
         {/* <UseCallBackHook/> */}
         {/* <UseContextHook/> */}
         {/* <UseRefHook /> */}
-        <UseReducerHook/>
+        {/* <UseReducerHook/> */}
+        {/* <UseIdHook/> */}
+        <UseTransitionHook/>
       </header>
     </div>
   );
