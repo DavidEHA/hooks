@@ -3,12 +3,11 @@ import { useRef, useState } from "react";
 const UseRefHook = () => {
   const inputRef = useRef("Hi");
   const [otherInputRef, setOtherInputRef] = useState("Bye");
-  const initialRef = inputRef.current;
-  const newRef = inputRef.current.value;
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log(newRef ? newRef : initialRef);
+    const valueRef = inputRef.current.value;
+    console.log(valueRef);
     console.log(otherInputRef);
   };
 
