@@ -4,14 +4,14 @@ const UseStateHook = () => {
   const [first, setfirst] = useState(0);
 
   const handleIncrease = () => {
-    setfirst(first + 1);
     // setfirst(first + 1);
-    // setfirst((prevValue) => {
-    //   return prevValue + 1;
-    // });
-    // setfirst((prevValue) => {
-    //   return prevValue + 1;
-    // });
+    // setfirst(first + 1);
+    setfirst((prevValue) => {
+      return prevValue + 1;
+    });
+    setfirst((prevValue) => {
+      return prevValue + 1;
+    });
   };
 
   const handleDecrease = () => {
@@ -19,7 +19,7 @@ const UseStateHook = () => {
   };
 
   console.log(first);
-  console.log("render")
+  console.log("render");
 
   return (
     <>

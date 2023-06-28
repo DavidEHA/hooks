@@ -13,6 +13,7 @@ function reducer(state, action) {
 
 const UseReducerHook = () => {
   const [state, dispatch] = useReducer(reducer, { age: 32, name:"Juan" });
+  console.log("Render")
 
   return (
     <>

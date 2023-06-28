@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const UseEffectHook = () => {
   const [first, setfirst] = useState(0);
+  const [second, setSecond] = useState(0);
 
   const handleIncrease = () => {
     setfirst((prevValue) => {
@@ -10,19 +11,24 @@ const UseEffectHook = () => {
   };
 
   const handleDecrease = () => {
-    setfirst((prevValue) => {
-      return prevValue - 1;
+    setSecond((prevValue) => {
+      return prevValue + 1;
     });
   };
 
+  useEffect(() => {
+
+  }, [])
+  
   useEffect(() => {
     
     console.log("enable")
   
     return () => {
-      console.log("disabled")
+      console.log("disabled") 
     }
-  }, [first])
+
+  }, [first, second])
   
 
   console.log("render")
@@ -30,6 +36,7 @@ const UseEffectHook = () => {
   return (
     <>
       {first}
+      {second}
       <button onClick={handleIncrease}> +1</button>
       <button onClick={handleDecrease}> -1</button>
     </>

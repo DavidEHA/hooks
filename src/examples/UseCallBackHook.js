@@ -9,6 +9,10 @@ const UseCallBackHook = () => {
     console.log("firstValue : ", firstValue);
   }, [firstValue]);
 
+  // const callbackFunction = () => {
+  //   console.log("firstValue : ", firstValue);
+  // }
+
   const changeFirstValue = (event) => {
     const newValue = event.target.value;
     setFirstValue(newValue);

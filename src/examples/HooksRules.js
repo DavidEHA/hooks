@@ -1,12 +1,18 @@
-// import { useState } from "react";
+import { useState } from "react";
+
+
 
 const HooksRules = () => {
-  // const [first, setfirst] = useState();
+  const [first, setfirst] = useState();
 
-  // const testFunction = () => {};
 
-  // if (first) {
-  // }
+
+  const testFunction = () => {
+
+  };
+
+  if (first) {
+  }
 
   return <>hola</>;
 };

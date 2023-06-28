@@ -25,7 +25,7 @@ const UseDeferredValueHook = () => {
 
     return list;
   };
-
+console.log("Render")
   return (
     <>
       <form>
